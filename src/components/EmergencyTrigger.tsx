@@ -78,10 +78,10 @@ export function EmergencyTrigger({ onEmergencyTriggered }: EmergencyTriggerProps
         <div className="space-y-2">
           <Label htmlFor="emergency-type">Emergency Type</Label>
           <Select value={emergencyType} onValueChange={setEmergencyType}>
-            <SelectTrigger id="emergency-type" className="bg-popover">
+            <SelectTrigger id="emergency-type" className="bg-background">
               <SelectValue placeholder="Select emergency type" />
             </SelectTrigger>
-            <SelectContent className="bg-popover z-50">
+            <SelectContent className="bg-card border border-border z-50">
               {emergencyTypes.map((type) => (
                 <SelectItem key={type} value={type}>
                   {type}
@@ -99,7 +99,7 @@ export function EmergencyTrigger({ onEmergencyTriggered }: EmergencyTriggerProps
             placeholder="Enter patient name"
             value={patientName}
             onChange={(e) => setPatientName(e.target.value)}
-            className="bg-popover"
+            className="bg-background"
           />
         </div>
         
@@ -111,7 +111,7 @@ export function EmergencyTrigger({ onEmergencyTriggered }: EmergencyTriggerProps
             placeholder="+91-9876543210"
             value={callerPhone}
             onChange={(e) => setCallerPhone(e.target.value)}
-            className="bg-popover"
+            className="bg-background"
           />
         </div>
         

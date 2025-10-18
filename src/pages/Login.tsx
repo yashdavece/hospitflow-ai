@@ -69,7 +69,7 @@ export default function Login() {
               placeholder="admin@hospital.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="bg-popover"
+              className="bg-background"
             />
           </div>
 
@@ -82,7 +82,7 @@ export default function Login() {
                 placeholder="Enter your password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="bg-popover pr-10"
+                className="bg-background pr-10"
               />
               <button
                 type="button"

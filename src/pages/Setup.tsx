@@ -134,7 +134,7 @@ export default function Setup() {
                 value={hospitalName}
                 onChange={(e) => setHospitalName(e.target.value)}
                 placeholder="City General Hospital"
-                className="bg-popover"
+                className="bg-background"
               />
             </div>
 
@@ -145,7 +145,7 @@ export default function Setup() {
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
                 placeholder="Mumbai"
-                className="bg-popover"
+                className="bg-background"
               />
             </div>
 
@@ -156,7 +156,7 @@ export default function Setup() {
                 value={contactNumber}
                 onChange={(e) => setContactNumber(e.target.value)}
                 placeholder="+91-22-12345678"
-                className="bg-popover"
+                className="bg-background"
               />
             </div>
 
@@ -169,7 +169,7 @@ export default function Setup() {
                 max="10"
                 value={floors}
                 onChange={(e) => setFloors(e.target.value)}
-                className="bg-popover"
+                className="bg-background"
               />
             </div>
 
@@ -191,7 +191,7 @@ export default function Setup() {
                 value={bedsCount}
                 onChange={(e) => setBedsCount(e.target.value)}
                 placeholder="30"
-                className="bg-popover"
+                className="bg-background"
               />
               <p className="text-xs text-muted-foreground">
                 ℹ️ We'll distribute across floors
@@ -206,7 +206,7 @@ export default function Setup() {
                 value={nursesCount}
                 onChange={(e) => setNursesCount(e.target.value)}
                 placeholder="15"
-                className="bg-popover"
+                className="bg-background"
               />
               <p className="text-xs text-muted-foreground">
                 ℹ️ Auto-assigned specializations
@@ -221,7 +221,7 @@ export default function Setup() {
                 value={doctorsCount}
                 onChange={(e) => setDoctorsCount(e.target.value)}
                 placeholder="8"
-                className="bg-popover"
+                className="bg-background"
               />
               <p className="text-xs text-muted-foreground">
                 ℹ️ Auto-assigned specializations
@@ -236,7 +236,7 @@ export default function Setup() {
                 value={icuBeds}
                 onChange={(e) => setIcuBeds(e.target.value)}
                 placeholder="5"
-                className="bg-popover"
+                className="bg-background"
               />
             </div>
 

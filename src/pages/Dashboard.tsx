@@ -205,20 +205,20 @@ export default function Dashboard() {
               {/* Legend */}
               <div className="flex flex-wrap gap-4 justify-center p-4 bg-card rounded-lg shadow-card">
                 <div className="flex items-center gap-2">
-                  <div className="w-4 h-4 rounded bg-white border-2 border-muted" />
-                  <span className="text-sm">Available</span>
+                  <div className="w-4 h-4 rounded bg-success border-2 border-border" />
+                  <span className="text-sm font-medium">Available</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-4 h-4 rounded bg-destructive" />
-                  <span className="text-sm">Occupied</span>
+                  <span className="text-sm font-medium">Occupied</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-4 h-4 rounded bg-warning" />
-                  <span className="text-sm">Cleaning</span>
+                  <span className="text-sm font-medium text-warning-foreground">Cleaning</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-4 h-4 rounded bg-accent" />
-                  <span className="text-sm">ICU</span>
+                  <span className="text-sm font-medium">ICU</span>
                 </div>
               </div>
             </div>

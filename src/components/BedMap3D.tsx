@@ -13,13 +13,13 @@ function BedBox({ bed, onClick, isSelected }: BedBoxProps) {
   const [hovered, setHovered] = useState(false);
 
   const colorMap: Record<string, string> = {
-    available: '#FFFFFF',
-    occupied: '#EF4444',
-    cleaning: '#FBBF24',
-    icu: '#3B82F6',
+    available: '#22C55E', // Green
+    occupied: '#EF4444', // Red
+    cleaning: '#EAB308', // Dark yellow
+    icu: '#3B82F6', // Blue
   };
 
-  const color = colorMap[bed.status] || '#FFFFFF';
+  const color = colorMap[bed.status] || '#22C55E';
 
   return (
     <group position={[bed.position_x, 0.3, bed.position_z]}>
@@ -49,7 +49,7 @@ function BedBox({ bed, onClick, isSelected }: BedBoxProps) {
       <Text
         position={[0, 0.8, 0]}
         fontSize={0.15}
-        color="#1F2937"
+        color="#0F172A"
         anchorX="center"
         anchorY="middle"
       >
@@ -69,7 +69,7 @@ function BedBox({ bed, onClick, isSelected }: BedBoxProps) {
         <Text
           position={[0, 1.2, 0]}
           fontSize={0.12}
-          color="#FFFFFF"
+          color="#0F172A"
           anchorX="center"
           anchorY="middle"
         >

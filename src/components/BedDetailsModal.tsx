@@ -22,12 +22,12 @@ export function BedDetailsModal({ bed, isOpen, onClose, onRelease }: BedDetailsM
 
   const getStatusColor = (status: string) => {
     const colors: Record<string, string> = {
-      available: 'bg-success',
-      occupied: 'bg-destructive',
-      cleaning: 'bg-warning',
-      icu: 'bg-accent',
+      available: 'bg-success text-success-foreground',
+      occupied: 'bg-destructive text-destructive-foreground',
+      cleaning: 'bg-warning text-warning-foreground',
+      icu: 'bg-accent text-accent-foreground',
     };
-    return colors[status] || 'bg-muted';
+    return colors[status] || 'bg-muted text-muted-foreground';
   };
 
   return (

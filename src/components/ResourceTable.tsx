@@ -27,7 +27,7 @@ export function ResourceTable({ type, data }: ResourceTableProps) {
     
     return (
       <Badge variant={variants[status] || 'default'} className="capitalize">
-        {status}
+        {status === 'available' ? '🟢 Available' : status === 'busy' ? '🟡 Busy' : status === 'off-duty' ? '⚫ Off-duty' : status}
       </Badge>
     );
   };
